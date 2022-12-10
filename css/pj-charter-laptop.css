@@ -1,0 +1,94 @@
+@media (min-width: 992px) {
+  /* Bắt đầu Style chung cho toàn dự án */
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  .bg-grey {
+    background-color: rgb(240, 248, 255);
+  }
+  body {
+    font-family: "Open Sans", sans-serif !important;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 1.8;
+    color: #495057;
+    margin-bottom: 0;
+  }
+  h3 {
+    font-size: 20px;
+    color: blue;
+    font-weight: bold;
+    border-bottom: 1px solid #bbcdc8;
+    padding-bottom: 12px;
+    margin-bottom: 0;
+  }
+
+  h5 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  .border-8-blue {
+    border: 8px solid blue;
+  }
+
+  .black-shadow {
+    box-shadow: 2px 2px 16px 2px rgba(0, 0, 0, 0.6);
+  }
+  .d-lg-grid {
+    display: grid !important;
+  }
+  .col-2fr-1fr-1fr {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  /* Kết thúc Style chung cho toàn dự án */
+
+  /* Bắt đầu phần Goals */
+  .goals-item i {
+    padding: 0 40px;
+    font-size: 24px;
+  }
+  /* Kết thúc phần Goals */
+
+  /* Bắt đầu phần Scope */
+  #scope {
+    grid-row: 2;
+  }
+  /* Kết thúc phần Scope */
+
+  /* Bắt đầu phần Team */
+  #timeline {
+    grid-row: 1 / span 2;
+    grid-column: 3;
+  }
+  #team i {
+    font-size: 24px;
+  }
+  /* Kết thúc phần Team */
+
+  /* Bắt đầu phần Primary */
+  #primary i {
+    font-size: 24px;
+  }
+  /* Kết thúc phần Primary */
+
+  /* Bắt đầu phần Timeline */
+  .timeline-item p:first-child {
+    color: rgb(237, 232, 255);
+    background-color: rgb(158, 136, 255);
+    border: 1px solid #000;
+    font-size: 18px;
+    width: 40px;
+    line-height: 40px;
+    height: 40px;
+  }
+  .border-bottom-dotted {
+    border-bottom: 2px dotted rgb(130, 207, 213);
+  }
+}

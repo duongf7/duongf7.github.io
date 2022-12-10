@@ -1,0 +1,357 @@
+@media (min-width: 768px) {
+  /* Bắt đầu Style chung cho toàn dự án */
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  .bg-grey {
+    background: #f7f7f7;
+  }
+
+  section > .container {
+    margin: auto;
+    display: block;
+  }
+  body {
+    font-family: "Open Sans", sans-serif !important;
+  }
+  .section-title,
+  #nav-bar h1 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  p,
+  em,
+  td,
+  th {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #495057;
+  }
+  h4 {
+    font-size: 16px !important;
+  }
+  /* Kết thúc Style chung cho toàn dự án */
+
+  /* Bắt đầu phần banner */
+  #banner {
+    background-image: linear-gradient(
+        rgba(34, 34, 34, 0.6),
+        rgba(34, 34, 34, 0.6)
+      ),
+      url(../images/banner.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  .inner-banner {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    line-height: 1.5;
+  }
+  .inner-banner h1 {
+    font-weight: 400;
+    font-size: 44px;
+    color: #fff;
+  }
+  .inner-banner span {
+    color: #dee2e6;
+  }
+  /* Kết thúc phần banner */
+
+  /* Bắt  đầu phần navigation */
+  #nav-bar a {
+    text-decoration: none;
+    color: #000;
+    padding: 0px 40px;
+    font-size: 14px;
+    line-height: 48px;
+    border-left: 2px solid #f7f7f7;
+  }
+
+  #nav-bar a:last-child {
+    border-right: 2px solid #f7f7f7;
+  }
+  #nav-bar .inner-container {
+    width: 64px;
+    position: relative;
+    border-left: 2px solid #f7f7f7;
+    height: 48px;
+  }
+  #nav-bar .inner-container img {
+    display: none;
+    position: absolute;
+    width: 180px;
+    left: 50%;
+    top: 50%;
+    border: 12px solid #fff;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+
+  #nav-bar i {
+    color: #1c7ed6;
+  }
+  /* Kết thúc phần navigation */
+
+  /* Bắt đầu phần thông tin cá nhân */
+  #about .section-title {
+    margin: 86px 12px 48px 48px;
+  }
+  #about .container {
+    max-width: none;
+    width: 100%;
+  }
+
+  #personal-info {
+    background-color: #f0f0f0;
+  }
+  #personal-info .info {
+    list-style-type: none;
+  }
+  #personal-info p {
+    margin-bottom: 0;
+    line-height: 2;
+  }
+
+  #personal-info span {
+    font-weight: 600;
+    color: #000;
+  }
+
+  .personal-icon a,
+  .personal-icon a:hover {
+    color: #1c7ed6;
+    text-decoration: none;
+  }
+  /* Kết thúc phần thông tin cá nhân */
+
+  /* Bắt đầu phần kinh nghiệm, sở thích, ngôn ngữ, kỹ năng, hoạt động */
+
+  /* Bắt đầu phần style chung cho tiêu đề phụ và phần mô tả */
+  .sub-header::before {
+    content: "•";
+    color: #1c7ed6;
+    font-size: 24px;
+    margin-right: 12px;
+    position: absolute;
+    left: -34px;
+    top: -6px;
+  }
+  .exp .sub-header,
+  .study .sub-header,
+  .activity .sub-header {
+    position: relative;
+    margin-top: 36px;
+  }
+  .skills .sub-header,
+  .language .sub-header {
+    margin-top: 12px;
+    margin-left: 36px;
+  }
+  .exp .description-container,
+  .study .description-container,
+  .activity .description-container {
+    margin: 0px 62px 48px;
+    line-height: 1.8;
+  }
+  /* Kết thúc phần style chung cho tiêu đề phụ và phần mô tả*/
+
+  /* Bắt đầu phần kinh nghiệm làm việc */
+  .width-adjust {
+    width: 48%;
+  }
+  .g-3 {
+    gap: 24px;
+  }
+  #job-info .container {
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+
+  #job-info .large-icon {
+    font-size: 48px;
+    color: #ced4da;
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  #job-info .inner-container {
+    border: 2px solid #f5f5f5;
+    display: grid;
+    grid-template-rows: 160px 1fr;
+  }
+  #job-info .header-container {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+  }
+  #job-info .section-title {
+    flex-grow: 3;
+    margin-left: 36px;
+  }
+  #job-info .medium-icon {
+    color: #74c0fc;
+    border: 2px solid #74c0fc;
+    border-radius: 50%;
+    width: 48px;
+    line-height: 48px;
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .exp span {
+    background-color: #1c7ed6;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 10px;
+  }
+  /* Kết thúc phần kinh nghiệm làm việc */
+
+  /* Bắt đầu phần hoạt động */
+
+  /* Kết thúc phần hoạt động */
+
+  /* Bắt đầu phần sở thích */
+
+  .hobby-description {
+    display: flex;
+  }
+  .hobby-description div {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+  }
+  /* Kết thúc phần sở thích */
+
+  /* Bắt đầu phần ngôn ngữ và kỹ năng */
+  .skills .sub-header::before,
+  .language .sub-header::before {
+    display: none;
+  }
+  .blue-line,
+  .grey-line {
+    width: 45px;
+    height: 2px;
+    margin-right: 10px;
+    display: inline-block;
+  }
+  h4 + .blue-line {
+    margin-left: 36px;
+  }
+  .blue-line {
+    background-color: #199cdb;
+  }
+  .grey-line {
+    background-color: #e9ecef;
+  }
+
+  /* Kết thúc phần ngôn ngữ và kỹ năng  */
+
+  /* Kết thúc phần kinh nghiệm, sở thích, ngôn ngữ, kỹ năng, hoạt động */
+
+  /* Bắt đầu phần chứng chỉ, giải thưởng */
+  #certificate p {
+    margin-bottom: 0;
+  }
+  #certificate .container {
+    margin-top: 40px;
+  }
+  #certificate .section-title {
+    padding: 40px 0;
+  }
+  .javascript img,
+  .web img {
+    width: 100%;
+  }
+  .database img {
+    width: 50%;
+  }
+  #certificate .inner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .database.description-container {
+    margin-top: 48px;
+    grid-column: 1/-1;
+    border-top: 2px solid #d6c08d;
+    padding-top: 48px;
+  }
+  .javascript.description-container {
+    border-left: 2px solid #d6c08d;
+  }
+  /* Kết thúc phần chứng chỉ, giải thưởng */
+
+  /* Bắt đầu phần dự án */
+  #project .section-title {
+    padding: 40px 0;
+  }
+  #project .inner-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+  }
+  #project img {
+    width: 100%;
+  }
+  .project-item {
+    border: 2px solid #f7f7f7;
+  }
+  #project .sub-header {
+    padding: 24px 0;
+    margin-left: 24px;
+  }
+  #project .description-container {
+    padding: 12px;
+  }
+  #project .description-container p {
+    margin-left: 12px;
+  }
+
+  #project th {
+    text-align: justify;
+    vertical-align: top;
+    font-weight: normal;
+    width: 30%;
+  }
+  #project th,
+  td {
+    padding: 12px 12px;
+  }
+  #project th,
+  td,
+  #project .description-container {
+    border-top: 2px solid #f7f7f7;
+  }
+  #project table {
+    border-collapse: collapse;
+  }
+  /* Kết thúc phần dự án */
+
+  /* Bắt đầu phần footer */
+  #footer .container {
+    margin-top: 48px;
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+  }
+  #footer li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 44px;
+    font-size: 14px;
+    color: #adb5bd;
+  }
+  #footer span {
+    color: #1c7ed6;
+    font-size: 28px;
+    vertical-align: sub;
+  }
+  /* Kết thúc phần footer */
+}
